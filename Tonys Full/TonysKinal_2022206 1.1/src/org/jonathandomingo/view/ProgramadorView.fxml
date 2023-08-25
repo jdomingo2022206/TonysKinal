@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.jonathandomingo.controller.ProgramadorController">
+   <children>
+      <AnchorPane prefHeight="250.0" prefWidth="232.0" style="-fx-background-color: #2A3C40;">
+         <children>
+            <Pane layoutX="21.0" layoutY="38.0" prefHeight="196.0" prefWidth="190.0" style="-fx-background-color: #F2B90F; -fx-background-radius: 75 75 0 0;">
+               <children>
+                  <ImageView fitHeight="125.0" fitWidth="180.0" layoutX="32.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/PC%20image.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="4.0" layoutY="146.0" text="Programador">
+                     <font>
+                        <Font name="Berlin Sans FB" size="32.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <Pane layoutX="232.0" prefHeight="700.0" prefWidth="569.0" style="-fx-background-color: #4c5c5c;">
+         <children>
+            <Circle fill="#a6937c" layoutX="99.0" layoutY="349.0" radius="31.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="50.0" layoutY="581.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="50.0" layoutY="548.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="50.0" layoutY="514.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="50.0" layoutY="481.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="50.0" layoutY="448.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="50.0" layoutY="415.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="50.0" layoutY="381.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="50.0" layoutY="348.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="557.0" layoutY="401.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="557.0" layoutY="368.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="557.0" layoutY="334.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="557.0" layoutY="301.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="557.0" layoutY="268.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="557.0" layoutY="235.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="557.0" layoutY="201.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="557.0" layoutY="168.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="#f2b90f" layoutX="14.0" layoutY="679.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="#a6937c" layoutX="175.0" layoutY="602.0" radius="31.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="#a6937c" layoutX="517.0" layoutY="647.0" radius="17.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="#a6937c" layoutX="527.0" layoutY="455.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="#a6937c" layoutX="348.0" layoutY="578.0" radius="17.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label layoutX="133.0" layoutY="359.0" prefHeight="37.0" prefWidth="370.0" text="Nombre: Jonathan Domingo" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="133.0" layoutY="396.0" prefHeight="37.0" prefWidth="290.0" text="Código Técnico: IN5VB" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="133.0" layoutY="435.0" prefHeight="37.0" prefWidth="290.0" text="Carné: 2022-206" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="30.0" />
+               </font>
+            </Label>
+            <Pane layoutX="183.0" layoutY="44.0" prefHeight="196.0" prefWidth="190.0" style="-fx-background-color: #F2B90F; -fx-background-radius: 75 75 0 0;">
+               <children>
+                  <ImageView fitHeight="147.0" fitWidth="125.0" layoutX="40.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Programador.jpeg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutY="250.0" prefHeight="457.0" prefWidth="232.0" style="-fx-background-color: #4c5c5c;">
+         <children>
+            <ImageView fitHeight="105.0" fitWidth="157.0" layoutX="64.0" layoutY="301.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Regresar.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Circle fill="#f2b90f" layoutX="794.0" layoutY="25.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+   </children>
+</AnchorPane>

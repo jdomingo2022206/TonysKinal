@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.jonathandomingo.controller.ProductoController">
+   <children>
+      <Circle fill="#f2b90f" layoutX="794.0" layoutY="25.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+      <AnchorPane prefHeight="250.0" prefWidth="232.0" style="-fx-background-color: #2A3C40;">
+         <children>
+            <Pane layoutX="21.0" layoutY="38.0" prefHeight="196.0" prefWidth="190.0" style="-fx-background-color: #F2B90F; -fx-background-radius: 75 75 0 0;">
+               <children>
+                  <ImageView fitHeight="128.0" fitWidth="130.0" layoutX="31.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/producto.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="30.0" layoutY="149.0" text="Producto">
+                     <font>
+                        <Font name="Berlin Sans FB" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <Pane layoutX="232.0" prefHeight="700.0" prefWidth="569.0" style="-fx-background-color: #F6F1E8;">
+         <children>
+            <Circle fill="#a6937c" layoutX="99.0" layoutY="349.0" radius="31.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="#a6937c" layoutX="396.0" layoutY="355.0" radius="31.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="50.0" layoutY="581.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="50.0" layoutY="548.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="50.0" layoutY="514.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="50.0" layoutY="481.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="50.0" layoutY="448.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="50.0" layoutY="415.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="50.0" layoutY="381.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="50.0" layoutY="348.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="557.0" layoutY="401.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="557.0" layoutY="368.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="557.0" layoutY="334.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="557.0" layoutY="301.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="557.0" layoutY="268.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="557.0" layoutY="235.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="557.0" layoutY="201.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="557.0" layoutY="168.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" />
+            <GridPane layoutX="11.0" prefHeight="149.0" prefWidth="558.0">
+               <children>
+                  <Label text="Codigo Producto:">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Cantidad:" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Nombre Producto:" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtCodigoProducto" editable="false" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets right="10.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="txtCantidadProducto" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets right="10.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="txtNombreProducto" editable="false" GridPane.columnIndex="3">
+                     <GridPane.margin>
+                        <Insets right="10.0" />
+                     </GridPane.margin>
+                  </TextField>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="105.33334350585938" minWidth="10.0" prefWidth="105.33334350585938" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="166.66665649414062" minWidth="10.0" prefWidth="164.66665649414062" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="50.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <Circle fill="#f2b90f" layoutX="14.0" layoutY="679.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="#a6937c" layoutX="175.0" layoutY="602.0" radius="31.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="#a6937c" layoutX="517.0" layoutY="647.0" radius="17.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="#a6937c" layoutX="206.0" layoutY="406.0" radius="17.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="#a6937c" layoutX="527.0" layoutY="455.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="#a6937c" layoutX="348.0" layoutY="578.0" radius="17.0" stroke="BLACK" strokeType="INSIDE" />
+            <TableView fx:id="tblProductos" layoutX="6.0" layoutY="154.0" onKeyReleased="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="256.0" prefWidth="558.0">
+               <columns>
+                  <TableColumn fx:id="colCodigoProducto" prefWidth="87.0" text="Cod. Producto" />
+                  <TableColumn fx:id="colNombreProducto" prefWidth="279.0" text="Nombre Producto" />
+                  <TableColumn fx:id="colCantidadProducto" minWidth="9.0" prefWidth="189.0" text="Cantidad" />
+               </columns>
+            </TableView>
+         </children>
+      </Pane>
+      <Pane layoutY="250.0" prefHeight="457.0" prefWidth="232.0" style="-fx-background-color: #4c5c5c;">
+         <children>
+            <VBox layoutY="63.0" prefHeight="196.0" prefWidth="232.0">
+               <children>
+                  <Button fx:id="btnNuevo" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#nuevo" prefHeight="25.0" prefWidth="246.0" styleClass="button1" stylesheets="@../resource/TonysKinal.css" text="Nuevo" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fx:id="imgNuevo" fitHeight="31.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/New.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnEliminar" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#eliminar" prefHeight="25.0" prefWidth="246.0" styleClass="button1" stylesheets="@../resource/TonysKinal.css" text="Eliminar" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fx:id="imgEliminar" fitHeight="31.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Eliminar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnEditar" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#editar" prefHeight="25.0" prefWidth="246.0" styleClass="button1" stylesheets="@../resource/TonysKinal.css" text="Editar" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fx:id="imgEditar" fitHeight="31.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Editar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnReporte" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#reporte" prefHeight="25.0" prefWidth="246.0" styleClass="button1" stylesheets="@../resource/TonysKinal.css" text="Reporte" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fx:id="imgReporte" fitHeight="31.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Reporte.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+            <ImageView fitHeight="87.0" fitWidth="77.0" layoutX="78.0" layoutY="306.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Regresar.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="62.0" layoutY="27.0" mnemonicParsing="false" onAction="#exportToExcel" prefHeight="25.0" prefWidth="109.0" text="Crear Excel" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

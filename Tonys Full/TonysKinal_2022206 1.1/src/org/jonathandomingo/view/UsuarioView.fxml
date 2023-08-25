@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="524.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.jonathandomingo.controller.UsuarioController">
+   <children>
+      <AnchorPane prefHeight="250.0" prefWidth="232.0" style="-fx-background-color: #2A3C40;">
+         <children>
+            <Pane layoutX="21.0" layoutY="38.0" prefHeight="196.0" prefWidth="190.0" style="-fx-background-color: #F2B90F; -fx-background-radius: 75 75 0 0;">
+               <children>
+                  <ImageView fitHeight="128.0" fitWidth="130.0" layoutX="31.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/user%20hombre.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="30.0" layoutY="149.0" text="Usuario">
+                     <font>
+                        <Font name="Berlin Sans FB" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <Pane layoutX="232.0" prefHeight="523.0" prefWidth="569.0" style="-fx-background-color: #F6F1E8;">
+         <children>
+            <Polygon fill="#ea9e39" layoutX="50.0" layoutY="426.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="50.0" layoutY="393.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="50.0" layoutY="359.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="50.0" layoutY="326.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="50.0" layoutY="293.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="50.0" layoutY="260.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="50.0" layoutY="226.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="50.0" layoutY="193.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="565.0" layoutY="403.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="565.0" layoutY="370.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="565.0" layoutY="336.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="565.0" layoutY="303.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="565.0" layoutY="270.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="565.0" layoutY="237.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="565.0" layoutY="203.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#ea9e39" layoutX="565.0" layoutY="170.0" points="-50.0, 14.0, 4.0, -25.0, -50.0, -66.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" />
+            <GridPane layoutX="66.0" layoutY="120.0" prefHeight="250.0" prefWidth="438.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="168.0" minWidth="10.0" prefWidth="168.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="332.0" minWidth="10.0" prefWidth="270.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <TextField fx:id="txtPassword" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label text="Codigo Usuario:">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Nombre Usuario&gt;:" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtCodigoUsuario" editable="false" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets right="10.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="txtNombreUsuario" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets right="10.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <Label text="Apellido Usuario:" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Usuario:" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Contraseña:" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtApellidoUsuario" editable="false" prefHeight="25.0" prefWidth="228.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="txtUsuario" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+            <Circle fill="#f2b90f" layoutX="14.0" layoutY="524.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </Pane>
+      <Pane layoutY="250.0" prefHeight="274.0" prefWidth="232.0" style="-fx-background-color: #4c5c5c;">
+         <children>
+            <VBox layoutY="14.0" prefHeight="108.0" prefWidth="232.0">
+               <children>
+                  <Button fx:id="btnNuevo" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#nuevo" prefHeight="25.0" prefWidth="246.0" styleClass="button1" stylesheets="@../resource/TonysKinal.css" text="Nuevo" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fx:id="imgNuevo" fitHeight="31.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/New.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnEliminar" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#eliminar" prefHeight="25.0" prefWidth="246.0" styleClass="button1" stylesheets="@../resource/TonysKinal.css" text="Eliminar" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fx:id="imgEliminar" fitHeight="31.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Eliminar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+            <ImageView fitHeight="87.0" fitWidth="77.0" layoutX="78.0" layoutY="148.0" onMouseClicked="#ventanaLogin" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Regresar.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Circle fill="#f2b90f" layoutX="794.0" layoutY="25.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+   </children>
+</AnchorPane>

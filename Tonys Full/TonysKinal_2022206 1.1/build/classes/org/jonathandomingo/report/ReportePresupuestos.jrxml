@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReportePresupuestos" language="groovy" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="196618ac-9146-4ff4-9245-9a0aab755f10">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="codEmpresa" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\Users\\Usuario\\Documents\\NetBeansProjects\\TonnysKinal2022238\\src\\org\\joseceferino\\report\\"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[select * from Empresas E Inner Join Servicios S on
+	E.codigoEmpresa = S.codigoEmpresa where E.codigoEmpresa = $P{codEmpresa}]]>
+	</queryString>
+	<field name="codigoEmpresa" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nombreEmpresa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="direccion" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="telefono" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="codigoServicio" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="fechaDeServicio" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tipoServicio" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="horaServicio" class="java.sql.Time">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="lugarServicio" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="telefonoContacto" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band height="572" splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="92" splitType="Stretch">
+			<staticText>
+				<reportElement x="45" y="25" width="667" height="45" forecolor="#000000" uuid="61ada1fd-3f5b-4eb8-a56a-6e768b38f1bb"/>
+				<textElement>
+					<font fontName="Berlin Sans FB" size="36" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Reporte de Presupuestos y su Empresa]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="85" splitType="Stretch">
+			<line>
+				<reportElement x="-190" y="8" width="752" height="1" uuid="106e5b36-efb6-4e4a-a80d-acdc65a7c1e6"/>
+				<graphicElement>
+					<pen lineStyle="Double" lineColor="#66CCFF"/>
+				</graphicElement>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="98" splitType="Stretch">
+			<line>
+				<reportElement x="100" y="0" width="1" height="98" forecolor="#0099FF" uuid="e7b079e9-f595-42ab-adff-c5f2e68b3889"/>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="221" y="0" width="1" height="98" forecolor="#0099FF" uuid="0110dd66-6e1a-454c-b2e6-c1b39bec0b72"/>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="112" y="0" width="100" height="45" forecolor="#000000" uuid="78afdfbf-8605-49b7-8318-c5f2ca279fa1"/>
+				<textElement>
+					<font fontName="Consolas" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fecha del Servicio]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="45" forecolor="#000000" uuid="a6709cdd-a6e4-4e7d-8780-ec2f90050ac9"/>
+				<textElement>
+					<font fontName="Consolas" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Empresa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="222" y="0" width="100" height="45" forecolor="#000000" uuid="b9b2bc40-1f9d-47ba-a9d3-317bad78ce38"/>
+				<textElement>
+					<font fontName="Consolas" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Hora del Servicio]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="344" y="0" width="100" height="45" forecolor="#000000" uuid="f7bb2fde-c9e5-4aa5-b30f-64078149d3a0"/>
+				<textElement>
+					<font fontName="Consolas" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Lugar del Servicio]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="598" y="0" width="114" height="45" forecolor="#000000" uuid="e3fc1ff5-10fa-4dcd-92a5-d4dc87ec6e20"/>
+				<textElement>
+					<font fontName="Consolas" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Teléfono de Contacto]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="469" y="0" width="114" height="45" forecolor="#000000" uuid="2d4d8fcb-2846-4d92-b09d-5da87ebda810"/>
+				<textElement>
+					<font fontName="Consolas" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Teléfon de Empresa]]></text>
+			</staticText>
+			<line>
+				<reportElement x="344" y="0" width="1" height="98" forecolor="#0099FF" uuid="f93696b4-27b8-48dd-8a5f-48fd0d349532"/>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="468" y="0" width="1" height="98" forecolor="#0099FF" uuid="35dc8d9a-ab22-4d8b-b152-e6a058a740d6"/>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="597" y="0" width="1" height="98" forecolor="#0099FF" uuid="6e59760b-31d6-47b4-b6ce-80c9481cc49f"/>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="0" width="752" height="1" uuid="57db824f-4a69-4325-85da-ff82ad31e979"/>
+				<graphicElement>
+					<pen lineStyle="Double" lineColor="#66CCFF"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement x="0" y="1" width="85" height="33" forecolor="#000000" uuid="44d07830-b4d6-429f-8611-29145219e9a5"/>
+				<textElement>
+					<font fontName="Consolas" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombreEmpresa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="234" y="0" width="100" height="34" forecolor="#000000" uuid="87c8495b-0e43-4edc-9e45-c75861bd0388"/>
+				<textElement>
+					<font fontName="Consolas" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{horaServicio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="355" y="0" width="100" height="32" forecolor="#000000" uuid="d7194176-ed6f-49e7-8569-b9e7ec63710f"/>
+				<textElement>
+					<font fontName="Consolas" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{lugarServicio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="494" y="0" width="89" height="33" forecolor="#000000" uuid="c9fc8f29-a58b-444b-b229-8fe82690531e"/>
+				<textElement>
+					<font fontName="Consolas" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{telefono}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="623" y="2" width="114" height="32" forecolor="#000000" uuid="df85c9e6-7f82-485c-9161-1b34acd3ff56"/>
+				<textElement>
+					<font fontName="Consolas" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{telefonoContacto}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="597" y="0" width="1" height="32" uuid="d1547b24-62d1-40ac-b86c-4504ba52c401"/>
+				<graphicElement>
+					<pen lineStyle="Dashed" lineColor="#3399FF"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="344" y="2" width="1" height="32" uuid="62e20abd-a3d1-4d23-9e3e-564b2ca72b70"/>
+				<graphicElement>
+					<pen lineStyle="Dashed" lineColor="#3399FF"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="467" y="2" width="1" height="32" uuid="339eefff-b9e6-4ccf-ab89-95a38f2a8cdc"/>
+				<graphicElement>
+					<pen lineStyle="Dashed" lineColor="#3399FF"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="222" y="2" width="1" height="32" uuid="d3fcec4b-9f29-4846-8aac-93163a418fb2"/>
+				<graphicElement>
+					<pen lineStyle="Dashed" lineColor="#3399FF"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="99" y="2" width="1" height="32" uuid="f1f7877b-4a9d-4111-b768-ea2688162a44"/>
+				<graphicElement>
+					<pen lineStyle="Dashed" lineColor="#3399FF"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="10" y="35" width="752" height="1" uuid="cd843c12-28eb-4ac6-ad97-81d3b1b4364a"/>
+				<graphicElement>
+					<pen lineStyle="Double" lineColor="#3366FF"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement x="112" y="2" width="100" height="20" uuid="764b8224-e31f-4fbc-8b5f-d0e313c54620"/>
+				<textFieldExpression><![CDATA[$F{fechaDeServicio}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+</jasperReport>

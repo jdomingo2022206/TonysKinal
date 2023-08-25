@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report1" language="groovy" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d08e622d-3b81-44f1-9ebc-160dd2ed91df">
+	<property name="ireport.zoom" value="1.0000000000000004"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[call sp_ListarEmpresa;]]>
+	</queryString>
+	<field name="codigoEmpresa" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nombreEmpresa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="direccion" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="telefono" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band height="752"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="129" height="34" uuid="6604d43f-555e-4c2c-9c53-8693c2b85eeb"/>
+				<textElement>
+					<font fontName="Berlin Sans FB" size="16"/>
+				</textElement>
+				<text><![CDATA[codigoEmpresa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="144" y="0" width="115" height="24" uuid="995ef78a-e3c1-444a-91b8-defb7892bcff"/>
+				<textElement>
+					<font fontName="Berlin Sans FB" size="16"/>
+				</textElement>
+				<text><![CDATA[nombreEmpresa]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<image>
+				<reportElement x="164" y="632" width="233" height="216" uuid="52710062-c915-4597-a8d7-59621658f014"/>
+				<imageExpression><![CDATA["C:\\Users\\Informatica\\Desktop\\Proyecto con llave foranea\\TonysKinal_2022206 1.1\\src\\org\\jonathandomingo\\images\\LogoSecundario.png"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="0" y="0" width="100" height="20" uuid="6902a095-9de3-4cf8-8a23-285c06174eeb"/>
+				<textElement>
+					<font fontName="Berlin Sans FB" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{codigoEmpresa}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="20" width="572" height="1" uuid="12ffacd7-27fd-464b-a631-7a3aa694fefe"/>
+				<graphicElement>
+					<pen lineStyle="Dashed" lineColor="#3366FF"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement x="144" y="1" width="115" height="20" uuid="2f964908-b6e6-45fa-b4f2-c8b01d555cf0"/>
+				<textElement>
+					<font fontName="Berlin Sans FB" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombreEmpresa}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="472" y="34" width="100" height="20" uuid="7216ceb6-d156-4336-8527-a8d449a27b3f"/>
+				<textElement>
+					<font fontName="Berlin Sans FB" size="12"/>
+				</textElement>
+				<text><![CDATA[Mas Que Comida]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>
